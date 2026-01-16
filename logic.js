@@ -4,7 +4,7 @@ let startTime = 0;
 let Ellapsedtime = 0;
 let isRunning = false;
 
-function Start() {
+const Start =()=> {
     if (!isRunning) {
         startTime = Date.now() - Ellapsedtime;
         timer = setInterval(update, 10);
@@ -12,23 +12,23 @@ function Start() {
 
     }
 }
-function Stop() {
+const Stop=() => {
     if (isRunning) {
         clearInterval(timer);
         Ellapsedtime = Date.now() - startTime;
         isRunning = false;
     }
 }
-function Reset() {
+const Reset=()=> {
     clearInterval(timer);
-     startTime = 0;
-     Ellapsedtime = 0;
+    startTime = 0;
+    Ellapsedtime = 0;
     isRunning = false;
-    display.innerHTML="00:00:00:00";
-  
+    display.innerHTML = "00:00:00:00";
+
 }
 
-function update() {
+const update=() => {
     const currentTime = Date.now();
     Ellapsedtime = currentTime - startTime;
     let hours = Math.floor(Ellapsedtime / (1000 * 60 * 60));
