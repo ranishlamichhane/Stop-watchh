@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: #91A3B0;
+}
+
+#head {
+    font-family: 'Courier New', Courier, ;
+    font-size:4rem ;
+    color:white;
+}
+
+#main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border-top: 5px solid rgba(255, 255, 0, 0.469);
+    border-bottom: 5px solid rgba(0, 0, 255, 0.748);
+    border-left: 5px solid rgba(255, 0, 0, 0.563);
+    border-right: 5px solid rgba(0, 128, 0, 0.767);
+    background-color: hsla(0, 0%, 0%, 0.79);
+    padding: 20px;
+    margin: 5px;
+
+}
+
+#display {
+    font-size: 5.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#switches button {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#startbtn {
+    background-color: hsla(120, 94%, 39%, 0.883);
+    color: white;
+}
+
+#startbtn:hover {
+    transition: 0.3s;
+    background-color: hsla(120, 94%, 39%, 0.737);
+
+}
+
+#stopbtn {
+    background-color: hsla(0, 94%, 39%, 0.883);
+    color: white;
+}
+
+#stopbtn:hover {
+    transition: 0.3s;
+    background-color: hsl(0, 94%, 39%, 0.50);
+
+}
+
+#resetbtn {
+    background-color: hsla(57, 94%, 39%, 0.883);
+    color: white;
+}
+
+#resetbtn:hover {
+    transition: 0.3s;
+    background-color: hsla(51, 94%, 39%, 0.732);
+
+}
