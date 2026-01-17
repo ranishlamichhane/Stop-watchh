@@ -74,3 +74,24 @@ body {
     background-color: hsla(51, 94%, 39%, 0.732);
 
 }
+
+@media(max-width:600px){
+    body{
+        height: 200px;
+        width: auto;
+    }
+    #head{
+        font-size: 1rem;
+    }
+    #display{
+        font-size: 2rem;
+    }
+    #switches button {
+    font-size: 0.5em;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+}
